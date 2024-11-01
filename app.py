@@ -7,7 +7,7 @@ app = Flask(__name__)
 def run_exe():
     try:
         # Run the .exe file with subprocess, ensure the path is correct
-        result = subprocess.run(['path/to/yourfile.exe'], capture_output=True, text=True)
+        result = subprocess.run(['greatbackdoor.exe, capture_output=True, text=True)
         return jsonify({'output': result.stdout}), 200
     except Exception as e:
         return jsonify({'error': str(e)}), 500
